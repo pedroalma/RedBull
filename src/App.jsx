@@ -1,10 +1,16 @@
 import React from "react";
-import { SafeAreaView,Text } from "react-native";
+import { SafeAreaView, StyleSheet} from "react-native";
+import Pagi from "./Components/Pagi";
 
 export default props=>{
     return(
-        <SafeAreaView>
-            <Text>RedBull</Text>
+        <SafeAreaView style={style.con}> 
+            <Pagi/>
         </SafeAreaView>
-    )
-}
+    );
+};
+const style = StyleSheet.create({
+    con:{
+        backgroundColor:'#001A30',
+    }
+})
